@@ -42,7 +42,7 @@ Task Run {
     Write-Host 'Running container...'
     docker run -dit --rm -p 8080:80 "$APP_NAME`:latest"
 
-    Start-Process "http://localhost:8080/default.html"
+    Start-Process "http://localhost:8080"
 }
 
 Task Publish {
