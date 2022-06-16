@@ -1,0 +1,43 @@
+﻿<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882">
+  <head>
+    <META http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>LegacyInterfaceHistoryDetailView View
+				</title>
+    <link href="help.css" type="text/css" rel="stylesheet"><script language="javascript" src="help.js" type="text/javascript"></script>
+<!--[if gte mso 9]><xml>
+<mso:CustomDocumentProperties>
+<mso:_dlc_DocId msdt:dt="string">6UD7KFKCWNQF-239221588-1322</mso:_dlc_DocId>
+<mso:_dlc_DocIdItemGuid msdt:dt="string">75caffda-588e-4947-947b-2b2bb831e920</mso:_dlc_DocIdItemGuid>
+<mso:_dlc_DocIdUrl msdt:dt="string">https://sp.choa.org/departments/finance/analytics/_layouts/15/DocIdRedir.aspx?ID=6UD7KFKCWNQF-239221588-1322, 6UD7KFKCWNQF-239221588-1322</mso:_dlc_DocIdUrl>
+</mso:CustomDocumentProperties>
+</xml><![endif]-->
+</head>
+  <body topmargin="0" id="bodyID" class="dtBODY"><script language="javascript">
+			var myStandardHeader = new StandardHeader(true);
+		
+					myStandardHeader.AddNavigationItem("Patient Classification System Documentation", "default.html");
+					myStandardHeader.AddNavigationItem("Views","viewlist.html");
+					myStandardHeader.AddNavigationItem("LegacyInterfaceHistoryDetailView");
+					myStandardHeader.Write();
+				</script><p>
+      <font size="5"><b>LegacyInterfaceHistoryDetailView</b></font><br></p><br><br><p>create view LegacyInterfaceHistoryDetailView as
+select
+[LegacyInterfaceHistoryDetail].Guid,
+[LegacyInterfaceHistoryDetail].LegacyInterfaceHistoryID,
+[LegacyInterfaceHistoryDetail].Code,
+[LegacyInterfaceHistoryDetail].Description,
+[LegacyInterfaceHistoryDetail].SeverityLevel,
+[LegacyInterfaceHistoryDetail].WhenOccurred,
+CONVERT(VARCHAR(MAX), DecryptByKeyAutoCert(CERT_ID('PatientEncryptionCertificate'), NULL, [LegacyInterfaceHistoryDetail].[Body])) Body,
+[LegacyInterfaceHistoryDetail].LineNumber,
+[LegacyInterfaceHistoryDetail].LegacyExceptionDefinitionID,
+[LegacyInterfaceHistoryDetail].MessageDump,
+[LegacyInterfaceHistoryDetail].DataInterfaceID,
+[LegacyInterfaceHistoryDetail].PatientMessageID
+from
+LegacyInterfaceHistoryDetail [LegacyInterfaceHistoryDetail] 
+				</p><br><br><script language="javascript">
+					var myStandardFooter = new StandardFooter();
+					myStandardFooter.Write();
+				</script></body>
+</html>

@@ -1,0 +1,86 @@
+﻿<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882">
+  <head>
+    <META http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Database Design Foreign Key Documentation</title>
+    <link href="help.css" type="text/css" rel="stylesheet"><script language="javascript" src="help.js" type="text/javascript"></script>
+<!--[if gte mso 9]><xml>
+<mso:CustomDocumentProperties>
+<mso:_dlc_DocId msdt:dt="string">6UD7KFKCWNQF-239221588-745</mso:_dlc_DocId>
+<mso:_dlc_DocIdItemGuid msdt:dt="string">da9a57ce-eb13-40f0-a730-61d94a12a824</mso:_dlc_DocIdItemGuid>
+<mso:_dlc_DocIdUrl msdt:dt="string">https://sp.choa.org/departments/finance/analytics/_layouts/15/DocIdRedir.aspx?ID=6UD7KFKCWNQF-239221588-745, 6UD7KFKCWNQF-239221588-745</mso:_dlc_DocIdUrl>
+</mso:CustomDocumentProperties>
+</xml><![endif]-->
+</head>
+  <body topmargin="0" id="bodyID" class="dtBODY"><script language="javascript">
+			var myStandardHeader = new StandardHeader(true);
+		
+					myStandardHeader.AddNavigationItem("Patient Classification System Documentation", "default.html");
+					myStandardHeader.AddNavigationItem("Groups","grouplist.html");
+					myStandardHeader.AddNavigationItem("Instrumentation Tables","Instrumentation_group.html");
+					myStandardHeader.AddNavigationItem("ElementRoute","ElementRoute_table.html");
+					myStandardHeader.AddNavigationItem("fkElementRouteToClinicalEventOrder");
+					myStandardHeader.Write();
+				</script><p>
+      <font size="5"><b>fkElementRouteToClinicalEventOrder</b></font>
+    </p><br><br><table border="0" cellpadding="0" cellspacing="0" id="AutoNumber1" class="dtENTITY">
+      <tr>
+        <td style="border: 1px solid #0000FF; padding-left: 4; padding-right: 4; padding-top: 1; padding-bottom: 1">
+          <font face="Verdana" size="1"><a href="ElementRoute_Table.html&#xD;&#xA;										">ElementRoute</a></font>
+        </td>
+        <td><img border="0" width="311" height="50" src="0N01.gif"></td>
+        <td style="border: 1px solid #0000FF; padding-left: 4; padding-right: 4; padding-top: 1; padding-bottom: 1">
+          <font face="Verdana" size="1"><a href="ClinicalEventOrder_Table.html&#xD;&#xA;										">ClinicalEventOrder</a></font>
+        </td>
+      </tr>
+    </table><br><br><H1 class="dtH1">Relationship</H1>
+    <div id="tablediv">
+      <table cellspacing="0" cellpadding="0" style="width:100%" class="dtTABLE">
+        <tr valign="top">
+          <th><b><font face="Verdana" size="1">Primary</font></b></th>
+          <th><b><font face="Verdana" size="1">Relationship</font></b></th>
+          <th><b><font face="Verdana" size="1">Foreign</font></b></th>
+          <th><b><font face="Verdana" size="1">Relationship</font></b></th>
+        </tr>
+        <tr>
+          <td>
+            <font face="Verdana" size="1">ElementRoute.ID 
+									</font>
+          </td>
+          <td>
+            <font face="Verdana" size="1">ElementRoute has [0,n] ClinicalEventOrder 
+									</font>
+          </td>
+          <td>
+            <font face="Verdana" size="1">ClinicalEventOrder.ElementRouteID 
+									</font>
+          </td>
+          <td>
+            <font face="Verdana" size="1">
+ClinicalEventOrder belongs to [0,1] ElementRoute 
+									</font>
+          </td>
+        </tr>
+      </table>
+    </div><br><br><H1 class="dtH1">Referential Integrity</H1>
+    <div id="tablediv">
+      <table cellspacing="0" cellpadding="0" style="width:100%" class="dtTABLE">
+        <tr valign="top">
+          <th><b><font face="Verdana" size="1">Cascade Update</font></b></th>
+          <th><b><font face="Verdana" size="1">Cascade Delete</font></b></th>
+        </tr>
+        <tr>
+          <td>
+            <font face="Verdana" size="1">No Action 
+				</font>
+          </td>
+          <td>
+            <font face="Verdana" size="1">No Action 
+				</font>
+          </td>
+        </tr>
+      </table>
+    </div><br><br><script language="javascript">
+					var myStandardFooter = new StandardFooter();
+					myStandardFooter.Write();
+				</script></body>
+</html>

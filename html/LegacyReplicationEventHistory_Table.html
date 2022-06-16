@@ -1,0 +1,547 @@
+﻿<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882">
+  <head>
+    <META http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>LegacyReplicationEventHistory Table
+				</title>
+    <link href="help.css" type="text/css" rel="stylesheet"><script language="javascript" src="help.js" type="text/javascript"></script>
+<!--[if gte mso 9]><xml>
+<mso:CustomDocumentProperties>
+<mso:_dlc_DocId msdt:dt="string">6UD7KFKCWNQF-239221588-1345</mso:_dlc_DocId>
+<mso:_dlc_DocIdItemGuid msdt:dt="string">805be9b1-4c05-44c8-83f0-9ab51415cec6</mso:_dlc_DocIdItemGuid>
+<mso:_dlc_DocIdUrl msdt:dt="string">https://sp.choa.org/departments/finance/analytics/_layouts/15/DocIdRedir.aspx?ID=6UD7KFKCWNQF-239221588-1345, 6UD7KFKCWNQF-239221588-1345</mso:_dlc_DocIdUrl>
+</mso:CustomDocumentProperties>
+</xml><![endif]-->
+</head>
+  <body topmargin="0" id="bodyID" class="dtBODY"><script language="javascript">
+			var myStandardHeader = new StandardHeader(true);
+		
+					myStandardHeader.AddNavigationItem("Patient Classification System Documentation", "default.html");
+					myStandardHeader.AddNavigationItem("Groups","grouplist.html");
+					myStandardHeader.AddNavigationItem("Legacy Tables","Legacy_group.html");
+					myStandardHeader.AddNavigationItem("LegacyReplicationEventHistory");
+					myStandardHeader.Write();
+				</script><p>
+      <font size="5"><b>LegacyReplicationEventHistory</b></font><br><font face="Verdana" size="1">This table contains the results of processing performed on data elements in this database by the replication subsystem. Several of the columns in this table contain the same information as the ReplicationEvent which invoked the process. 
+						</font>
+    </p><br><br><H1 class="dtH1">General Information</H1>
+    <div class="tablediv">
+      <table cellspacing="0" cellpadding="0" style="width:100%" class="dtTABLE">
+        <tr valign="top">
+          <th><b><font face="Verdana" size="1"><a href="&#xD;&#xA;														LaborWorkx_Column_Information.html&#xD;&#xA;													">
+													Classification
+												</a></font></b></th>
+          <th><b><font face="Verdana" size="1"><a href="&#xD;&#xA;														LaborWorkx_Column_Information.html&#xD;&#xA;													">
+													Maintenance
+												</a></font></b></th>
+          <th><b><font face="Verdana" size="1"><a href="&#xD;&#xA;														LaborWorkx_Column_Information.html&#xD;&#xA;													">
+													Publication
+												</a></font></b></th>
+          <th><b><font face="Verdana" size="1"><a href="&#xD;&#xA;														LaborWorkx_Column_Information.html&#xD;&#xA;													">
+													Historical Data Transfer Method
+												</a></font></b></th>
+          <th><b><font face="Verdana" size="1"><a href="&#xD;&#xA;														LaborWorkx_Column_Information.html&#xD;&#xA;													">
+													Audit Table
+												</a></font></b></th>
+          <th><b><font face="Verdana" size="1"><a href="&#xD;&#xA;															LaborWorkx_Column_Information.html&#xD;&#xA;														">
+														Clean Up Script Action
+													</a></font></b></th>
+        </tr>
+        <tr>
+          <td>
+            <font face="Verdana" size="1">Dynamic 
+				</font>
+          </td>
+          <td>
+            <font face="Verdana" size="1">Scheduled 
+				</font>
+          </td>
+          <td>
+            <font face="Verdana" size="1">None 
+				</font>
+          </td>
+          <td>
+            <font face="Verdana" size="1">Not Transferred 
+				</font>
+          </td>
+          <td>
+            <font face="Verdana" size="1">Not Audited 
+				</font>
+          </td>
+          <td>
+            <font face="Verdana" size="1">Truncate 
+				</font>
+          </td>
+        </tr>
+      </table>
+    </div><br><br><H1 class="dtH1">Size</H1>
+    <div class="tablediv">
+      <table cellspacing="0" cellpadding="0" style="width:100%" class="dtTABLE">
+        <tr valign="top">
+          <th><b><font face="Verdana" size="1">Max Row Size (In Bytes)</font></b></th>
+        </tr>
+        <tr>
+          <td>
+            <font face="Verdana" size="1">424 
+				</font>
+          </td>
+        </tr>
+      </table>
+    </div><br><br><H1 class="dtH1">Columns</H1><img align="middle" src="goldkey.gif"> = Primary Key
+				<img align="middle" src="silverkey.gif"> = Foreign Key
+				<div class="tablediv">
+      <table cellspacing="0" cellpadding="0" style="width:100%" class="dtTABLE">
+        <tr valign="top">
+          <th><b><font face="Verdana" size="1">Key</font></b></th>
+          <th><b><font face="Verdana" size="1">Column Name</font></b></th>
+          <th><b><font face="Verdana" size="1">Description</font></b></th>
+          <th><b><font face="Verdana" size="1">Is Identity</font></b></th>
+          <th><b><font face="Verdana" size="1">Data Type</font></b></th>
+          <th><b><font face="Verdana" size="1">Nullable</font></b></th>
+          <th><b><font face="Verdana" size="1">Default</font></b></th>
+          <th><b><font face="Verdana" size="1">Size</font></b></th>
+          <th><b><font face="Verdana" size="1">Length: Physical(Logical)</font></b></th>
+        </tr>
+        <tr>
+          <td>
+            <font face="Verdana" size="1"></font><img align="middle" src="goldkey.gif"></td>
+          <td>
+            <font face="Verdana" size="1"><a href="LegacyReplicationEventHistory_Guid_tablecolumn.html&#xD;&#xA;											">Guid</a> 
+									</font>
+          </td>
+          <td>
+            <font face="Verdana" size="1">A unique guid that identifies a replication event history. 
+				</font>
+          </td>
+          <td>
+            <font face="Verdana" size="1">No 
+				</font>
+          </td>
+          <td>
+            <font face="Verdana" size="1"><a href="GuidType_userdatatype.html&#xD;&#xA;													">GuidType</a> 
+												<a>
+													[uniqueidentifier]
+												</a></font>
+          </td>
+          <td>
+            <font face="Verdana" size="1">No 
+				</font>
+          </td>
+          <td>
+            <font face="Verdana" size="1">(newid()) 
+				</font>
+          </td>
+          <td>
+            <font face="Verdana" size="1"></font>
+          </td>
+          <td>
+            <font face="Verdana" size="1">16</font>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <font face="Verdana" size="1"></font>
+          </td>
+          <td>
+            <font face="Verdana" size="1"><a href="LegacyReplicationEventHistory_ReplicationEventID_tablecolumn.html&#xD;&#xA;											">Replication<br>EventID</a> 
+									</font>
+          </td>
+          <td>
+            <font face="Verdana" size="1">This value is the ID value from the ReplicationEvent record which invoked the processing. 
+				</font>
+          </td>
+          <td>
+            <font face="Verdana" size="1">No 
+				</font>
+          </td>
+          <td>
+            <font face="Verdana" size="1"><a href="NumberType_userdatatype.html&#xD;&#xA;													">NumberType</a> 
+												<a>
+													[int]
+												</a></font>
+          </td>
+          <td>
+            <font face="Verdana" size="1">No 
+				</font>
+          </td>
+          <td>
+            <font face="Verdana" size="1"> 
+				</font>
+          </td>
+          <td>
+            <font face="Verdana" size="1">10</font>
+          </td>
+          <td>
+            <font face="Verdana" size="1">4</font>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <font face="Verdana" size="1"></font>
+          </td>
+          <td>
+            <font face="Verdana" size="1"><a href="LegacyReplicationEventHistory_Source_tablecolumn.html&#xD;&#xA;											">Source</a> 
+									</font>
+          </td>
+          <td>
+            <font face="Verdana" size="1">The source of the event, for example: 513 Employee; 514 Department; 515 Job Class. 
+				</font>
+          </td>
+          <td>
+            <font face="Verdana" size="1">No 
+				</font>
+          </td>
+          <td>
+            <font face="Verdana" size="1"><a href="NumberType_userdatatype.html&#xD;&#xA;													">NumberType</a> 
+												<a>
+													[int]
+												</a></font>
+          </td>
+          <td>
+            <font face="Verdana" size="1">No 
+				</font>
+          </td>
+          <td>
+            <font face="Verdana" size="1"> 
+				</font>
+          </td>
+          <td>
+            <font face="Verdana" size="1">10</font>
+          </td>
+          <td>
+            <font face="Verdana" size="1">4</font>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <font face="Verdana" size="1"></font>
+          </td>
+          <td>
+            <font face="Verdana" size="1"><a href="LegacyReplicationEventHistory_SourceKey_tablecolumn.html&#xD;&#xA;											">SourceKey</a> 
+									</font>
+          </td>
+          <td>
+            <font face="Verdana" size="1">This value is the SourceKey value from the ReplicationEvent which invoked the processing. 
+				</font>
+          </td>
+          <td>
+            <font face="Verdana" size="1">No 
+				</font>
+          </td>
+          <td>
+            <font face="Verdana" size="1"><a href="SmallXMLFragementType_userdatatype.html&#xD;&#xA;													">SmallXMLFragementType</a> 
+												<a>
+													[varchar]
+												</a></font>
+          </td>
+          <td>
+            <font face="Verdana" size="1">No 
+				</font>
+          </td>
+          <td>
+            <font face="Verdana" size="1"> 
+				</font>
+          </td>
+          <td>
+            <font face="Verdana" size="1"></font>
+          </td>
+          <td>
+            <font face="Verdana" size="1">128</font>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <font face="Verdana" size="1"></font>
+          </td>
+          <td>
+            <font face="Verdana" size="1"><a href="LegacyReplicationEventHistory_Classification_tablecolumn.html&#xD;&#xA;											">Classification</a> 
+									</font>
+          </td>
+          <td>
+            <font face="Verdana" size="1">This value is the Classification value from the Replication Event which invoked the processing. 
+				</font>
+          </td>
+          <td>
+            <font face="Verdana" size="1">No 
+				</font>
+          </td>
+          <td>
+            <font face="Verdana" size="1"><a href="ReplicationEventClassType_userdatatype.html&#xD;&#xA;													">ReplicationEventClassType</a> 
+												<a>
+													[smallint]
+												</a></font>
+          </td>
+          <td>
+            <font face="Verdana" size="1">No 
+				</font>
+          </td>
+          <td>
+            <font face="Verdana" size="1"> 
+				</font>
+          </td>
+          <td>
+            <font face="Verdana" size="1">5</font>
+          </td>
+          <td>
+            <font face="Verdana" size="1">2</font>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <font face="Verdana" size="1"></font>
+          </td>
+          <td>
+            <font face="Verdana" size="1"><a href="LegacyReplicationEventHistory_Status_tablecolumn.html&#xD;&#xA;											">Status</a> 
+									</font>
+          </td>
+          <td>
+            <font face="Verdana" size="1">Indicates the status of the replication event. 
+				</font>
+          </td>
+          <td>
+            <font face="Verdana" size="1">No 
+				</font>
+          </td>
+          <td>
+            <font face="Verdana" size="1"><a href="ReplEventHistoryStatusType_userdatatype.html&#xD;&#xA;													">ReplEventHistoryStatusType</a> 
+												<a>
+													[smallint]
+												</a></font>
+          </td>
+          <td>
+            <font face="Verdana" size="1">No 
+				</font>
+          </td>
+          <td>
+            <font face="Verdana" size="1"> 
+				</font>
+          </td>
+          <td>
+            <font face="Verdana" size="1">5</font>
+          </td>
+          <td>
+            <font face="Verdana" size="1">2</font>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <font face="Verdana" size="1"></font>
+          </td>
+          <td>
+            <font face="Verdana" size="1"><a href="LegacyReplicationEventHistory_WhenOccurred_tablecolumn.html&#xD;&#xA;											">WhenOccurred</a> 
+									</font>
+          </td>
+          <td>
+            <font face="Verdana" size="1">The date and time when the replication event was processed. 
+				</font>
+          </td>
+          <td>
+            <font face="Verdana" size="1">No 
+				</font>
+          </td>
+          <td>
+            <font face="Verdana" size="1"><a href="DateTimeType_userdatatype.html&#xD;&#xA;													">DateTimeType</a> 
+												<a>
+													[datetime]
+												</a></font>
+          </td>
+          <td>
+            <font face="Verdana" size="1">No 
+				</font>
+          </td>
+          <td>
+            <font face="Verdana" size="1"> 
+				</font>
+          </td>
+          <td>
+            <font face="Verdana" size="1"></font>
+          </td>
+          <td>
+            <font face="Verdana" size="1">8</font>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <font face="Verdana" size="1"></font>
+          </td>
+          <td>
+            <font face="Verdana" size="1"><a href="LegacyReplicationEventHistory_Description_tablecolumn.html&#xD;&#xA;											">Description</a> 
+									</font>
+          </td>
+          <td>
+            <font face="Verdana" size="1">The text message describing the result of the replication event. 
+				</font>
+          </td>
+          <td>
+            <font face="Verdana" size="1">No 
+				</font>
+          </td>
+          <td>
+            <font face="Verdana" size="1"><a href="DescriptionType_userdatatype.html&#xD;&#xA;													">DescriptionType</a> 
+												<a>
+													[varchar]
+												</a></font>
+          </td>
+          <td>
+            <font face="Verdana" size="1">No 
+				</font>
+          </td>
+          <td>
+            <font face="Verdana" size="1"> 
+				</font>
+          </td>
+          <td>
+            <font face="Verdana" size="1"></font>
+          </td>
+          <td>
+            <font face="Verdana" size="1">256</font>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <font face="Verdana" size="1"></font>
+          </td>
+          <td>
+            <font face="Verdana" size="1"><a href="LegacyReplicationEventHistory_ReplicationID_tablecolumn.html&#xD;&#xA;											">ReplicationID</a> 
+									</font>
+          </td>
+          <td>
+            <font face="Verdana" size="1">The ID of the record that was affected by this replication process. 
+				</font>
+          </td>
+          <td>
+            <font face="Verdana" size="1">No 
+				</font>
+          </td>
+          <td>
+            <font face="Verdana" size="1"><a href="NumberType_userdatatype.html&#xD;&#xA;													">NumberType</a> 
+												<a>
+													[int]
+												</a></font>
+          </td>
+          <td>
+            <font face="Verdana" size="1">Yes 
+				</font>
+          </td>
+          <td>
+            <font face="Verdana" size="1"> 
+				</font>
+          </td>
+          <td>
+            <font face="Verdana" size="1">10</font>
+          </td>
+          <td>
+            <font face="Verdana" size="1">4</font>
+          </td>
+        </tr>
+      </table>
+    </div><br><br><H1 class="dtH1">Indexes</H1>
+    <div class="tablediv">
+      <table cellspacing="0" cellpadding="0" style="width:100%" class="dtTABLE">
+        <tr valign="top">
+          <th><b><font face="Verdana" size="1">Index Name</font></b></th>
+          <th><b><font face="Verdana" size="1">Clustered</font></b></th>
+          <th><b><font face="Verdana" size="1">Unique</font></b></th>
+          <th><b><font face="Verdana" size="1">File Group</font></b></th>
+          <th><b><font face="Verdana" size="1">Pad Index</font></b></th>
+          <th><b><font face="Verdana" size="1">Fill Factor</font></b></th>
+          <th><b><font face="Verdana" size="1">Columns(Sort Order)</font></b></th>
+        </tr>
+        <tr>
+          <td>
+            <font face="Verdana" size="1">pkLegacyReplicationEventHistory 
+											</font>
+          </td>
+          <td>
+            <font face="Verdana" size="1">Clustered 
+											</font>
+          </td>
+          <td>
+            <font face="Verdana" size="1">Yes 
+											</font>
+          </td>
+          <td>
+            <font face="Verdana" size="1">PRIMARY 
+											</font>
+          </td>
+          <td>
+            <font face="Verdana" size="1">No 
+											</font>
+          </td>
+          <td>
+            <font face="Verdana" size="1">80 
+											</font>
+          </td>
+          <td>
+            <font face="Verdana" size="1">Guid(Asc)
+													</font>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <font face="Verdana" size="1">akLegacyReplicationEventHistory 
+											</font>
+          </td>
+          <td>
+            <font face="Verdana" size="1">Non-Clustered 
+											</font>
+          </td>
+          <td>
+            <font face="Verdana" size="1">No 
+											</font>
+          </td>
+          <td>
+            <font face="Verdana" size="1">PRIMARY 
+											</font>
+          </td>
+          <td>
+            <font face="Verdana" size="1">No 
+											</font>
+          </td>
+          <td>
+            <font face="Verdana" size="1">90 
+											</font>
+          </td>
+          <td>
+            <font face="Verdana" size="1">WhenOccurred(Asc)
+													</font>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <font face="Verdana" size="1">akLegacyReplicationEventHistory1 
+											</font>
+          </td>
+          <td>
+            <font face="Verdana" size="1">Non-Clustered 
+											</font>
+          </td>
+          <td>
+            <font face="Verdana" size="1">No 
+											</font>
+          </td>
+          <td>
+            <font face="Verdana" size="1">PRIMARY 
+											</font>
+          </td>
+          <td>
+            <font face="Verdana" size="1">No 
+											</font>
+          </td>
+          <td>
+            <font face="Verdana" size="1">90 
+											</font>
+          </td>
+          <td>
+            <font face="Verdana" size="1">Source(Asc)
+													</font>
+            <font face="Verdana" size="1">SourceKey(Asc)
+													</font>
+          </td>
+        </tr>
+      </table>
+    </div><br><H1 class="dtH1">Procedures</H1>There are no procedures for this table.<br><br><br><H1 class="dtH1">Trigger</H1>There are no Triggers for this table.<br><br><br><H1 class="dtH1">Relationships</H1>
+								There are no Relationships for this table.
+							<br><script language="javascript">
+					var myStandardFooter = new StandardFooter(); myStandardFooter.Write();
+				</script></body>
+</html>

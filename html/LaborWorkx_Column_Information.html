@@ -1,0 +1,112 @@
+﻿<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882">
+  <head>
+    <META http-equiv="Content-Type" content="text/html; charset=utf-16">
+    <title>Column Information</title>
+    <link href="help.css" type="text/css" rel="stylesheet">
+    <script language="javascript" src="help.js" type="text/javascript">
+    </script>
+  
+<!--[if gte mso 9]><xml>
+<mso:CustomDocumentProperties>
+<mso:_dlc_DocId msdt:dt="string">6UD7KFKCWNQF-239221588-1253</mso:_dlc_DocId>
+<mso:_dlc_DocIdItemGuid msdt:dt="string">9624c42f-b465-4ef4-805f-472d63638ca9</mso:_dlc_DocIdItemGuid>
+<mso:_dlc_DocIdUrl msdt:dt="string">https://sp.choa.org/departments/finance/analytics/_layouts/15/DocIdRedir.aspx?ID=6UD7KFKCWNQF-239221588-1253, 6UD7KFKCWNQF-239221588-1253</mso:_dlc_DocIdUrl>
+</mso:CustomDocumentProperties>
+</xml><![endif]-->
+</head>
+  <body topmargin="0" id="bodyID" class="dtBODY">
+    <script language="javascript">
+				var myStandardHeader = new StandardHeader(true);			
+				myStandardHeader.Write();			
+		</script>
+    <p>
+      <font size="5">
+        <b>Column Information</b>
+      </font>
+      <br>
+    </p>
+    <br>
+    <br>
+<H1>Classification:</H1>
+Defines how a table is used.<br><br>
+<table class="dtTABLE">
+	<tr>
+		<th>Value</th><th>Description</th>
+	</tr><tr>
+		<td>Static</td><td>Table data is not modified, inserted or deleted often.</td>
+	</tr><tr>
+		<td>Dynamic</td><td>Table data is modified, inserted or deleted often.</td>
+	</tr>
+</table>
+<br><br>
+
+<H1>Maintenance:</H1>
+A bit mask value indicating how table data is cleaned up.<br><br>
+Values:<br>
+<table class="dtTABLE">
+	<tr><th>Value</th><th>Bit Value</th><th>Description</th></tr>
+	<tr><td>Manual</td><td>1</td><td>Data can be cleaned up manually through Actions/Purge screen in the Portal.</td><tr>
+	<tr><td>Scheduled</td><td>2</td><td>Data is automatically cleaned up when the Database Maintenance process is executed.</td><tr>
+	<tr><td>Parent Table</td><td>4</td><td>Data is not cleaned up directly but indirectly through a parent table (Cascading).</td><tr>
+	<tr><td>Repository</td><td>8</td><td>Identifies the repository tables. These are specialized cleanup tables.</td><tr>
+	<tr><td>Not Allowed</td><td>16</td><td>No cleanup of data is done.</td><tr>
+</table>
+<br><br>
+
+<H1>Publication:</H1>
+Defines whether a table is included in a publication and which publication(s) it is.<br><br>
+Values:<br>
+<ul>
+	<li>LaborWorkx_Transactional</li>
+	<li>LaborWorkx_Merge_ReadOnly</li>
+	<li>LaborWorkx_Merge_Updatable</li>
+</ul>
+<br><br>
+
+<H1>Historical Data Transfer Method:</H1>
+Defines how data is transferred to the Historical Database.<br><br>
+Values:<br>
+<table class="dtTABLE">
+	<tr>
+		<th>Value</th><th>Description</th>
+	</tr><tr>
+		<td>Copy</td><td>A specific set of data in the table is copied to the historical database.</td>
+	</tr><tr>
+		<td>Move</td><td>A specific set of data in the table is moved to the historical database.</td>
+	</tr><tr>
+		<td>Append</td><td>The data in the table is transferred to the historical database based on the last date transferred (used by audit tables).</td>
+	</tr><tr>
+		<td>Snapshot</td><td>The entire table is copied to the historical database.</td>
+	</tr><tr>
+		<td>AppendNonPayPeriod</td><td>The data in the table is transferred to the historical database based on the last date transferred and a rolling date window.</td>
+	</tr><tr>
+		<td>MoveNonPayPeriod</td><td>The data in the table is transferred to the historical database based on the last date transferred and a rolling date window.</td>
+	</tr>
+</table>
+<br><br>
+
+
+<H1>Audit Table:</H1>
+Defines the audit table used for auditing.<br><br>
+
+<H1>CleanUpScriptAction:</H1>
+Defines how a table is cleaned before shipment.<br><br>
+Values:<br>
+<table class="dtTABLE">
+	<tr>
+		<th>Value</th><th>Description</th>
+	</tr><tr>
+		<td>None</td><td>Nothing is done.</td>
+	</tr><tr>
+		<td>TrunReseed</td><td>Remove all data and reseed ID value if present.</td>
+	</tr><tr>
+		<td>Truncate</td><td>Remove all data.</td>
+	</tr><tr>
+		<td>CoreData</td><td>core data script is used to populate data.</td>
+	</tr>
+</table>
+<br><br><script language="javascript">
+				var myStandardFooter = new StandardFooter();
+				myStandardFooter.Write();
+		</script></body>
+</html>
